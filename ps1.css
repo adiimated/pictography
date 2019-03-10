@@ -1,0 +1,132 @@
+* {box-sizing: border-box;}
+body{
+  margin: 0;
+  background-color: white;
+}
+.containerfornav {
+  background: white ;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  color: black;
+}
+.containerfornav a {
+  font-family: Helvetica Verdana ;
+  float: left;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.containerfornav a:hover{
+  background-color: LightCoral;
+}
+
+
+.cat ul{
+display:none;
+
+list-style: none;
+}
+.categories ul{
+
+position: absolute;
+float: none;
+background:black;
+min-width:100px;
+padding:5px;
+top:27px;
+left: 190px;
+z-index:1;
+text-align:center;
+align-self: center;
+}
+.categories ul li a{
+  text-align: center;
+}
+.containerfornav .cat:hover ul {
+  position: fixed;
+  display: block;
+}
+
+.containerfornav .cat .categories ul li a:hover{
+  background-color: lightcoral;
+}
+
+.log{
+  position: absolute;
+  right: 0px;
+}
+.search{
+  position: absolute;
+  float: right;
+  right: 100px;
+  font-size: 20px;
+  border: none;
+
+}
+.search button {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border: none;
+  background: black;
+  color: white;
+  padding: 5px 15px;
+  font-family: Helvetica Verdana;
+  backface-visibility: 90%;
+}
+.search button:hover{
+  background-color: lightcoral;
+}
+.search input[type=text] {
+  padding: 6px;
+  margin-top: 7px;
+  font-size: 17px;
+  border: none;
+  width: 400px;
+  font-family: Verdana ;
+}
+.cname{
+
+  color: black;
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  font-family: serif;
+  background-position: center;
+  font-size: 40px;
+}
+  
+  .srh ul
+  {
+    list-style-type: none;
+  }
+  .srh ul li img {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 2px 10px 0 0; 
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+  }
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc; 
+   
+  }
+
